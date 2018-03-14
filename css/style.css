@@ -195,19 +195,19 @@ media screen and (max-width: 900px) {
 
 >>>>>>> a15974d5c84f92624ad929aa0181f3ff5e1b7a6f
 
-#ptext {
+.ptext {
   font-style: normal;
 font-weight: 600;
 }
 
-#wrapper .text {
+.wrapper .text {
 position:relative;
 bottom:30px;
 left:0px;
-visibility:hidden;
+
 }
 
-#wrapper .text {
+.wrapper .text {
 visibility:visible;
 
 }
@@ -215,7 +215,7 @@ visibility:visible;
   text-align: center;
 }
 
-#wrapper .hover:hover {
+.wrapper .hover:hover {
 opacity: 0.5;
 }
 
@@ -239,7 +239,6 @@ opacity: 0.5;
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 /* .ContactUs__container form {
 background-color: white ;
-
 } */
 @media screen and (max-width: 800px) {
     .column {
