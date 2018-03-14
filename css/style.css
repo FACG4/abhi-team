@@ -12,6 +12,10 @@ p{
 #backk {
     background-color: #cce6ff;
 }
+#ptext {
+  font-style: normal;
+font-weight: 600;
+}
 
 #wrapper .text {
 position:relative;
