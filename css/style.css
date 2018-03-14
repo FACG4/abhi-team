@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    text-align: center;
 }
 h3{
   margin-top:40px;
@@ -27,6 +26,9 @@ visibility:hidden;
 #wrapper .text {
 visibility:visible;
 
+}
+.center{
+  text-align: center;
 }
 
 #wrapper .hover:hover {
@@ -115,7 +117,6 @@ padding: 5px;
 }
 
 .ContactUs__container label{
-  padding-left: 15px;
   font-weight: bold;
   border-radius: 5px ;
 }
