@@ -1,5 +1,5 @@
 
-/* #4caf50
+/* #4caf50*/
 
 /**
  * For modern browsers
@@ -32,32 +32,31 @@
   box-sizing: border-box;
 }
 
-.container {
+.header__container {
   width: 80%;
   margin: 0 auto;
 }
 
-
-header {
+.header {
   background: grey;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
   background-size: cover;
   height: 100vh;
 }
-nav {
+.nav {
   padding-top: 30px;
 }
-nav .logo {
+.nav .logo {
   width: 150px;
   border-radius: 50%;
   float: left;
 }
 
-nav .nav-bar {
+.nav .nav-bar {
   float: right;
 }
 
-nav .nav-bar li {
+.nav .nav-bar li {
   display: inline-block;
   padding: 10px 20px;
   list-style: none;
@@ -68,23 +67,40 @@ nav .nav-bar li {
   border-radius: 5px;
 }
 
-nav .nav-bar li:hover {
+.nav .nav-bar li:hover {
   color: green;
   background: black;
 }
 
 
-nav .nav-bar li a {
+.nav .nav-bar li a {
   text-decoration: none;
   color: white;
 }
 
-header .hero {
+.header .hero {
   color: white;
   margin-top: 15%;
   text-align: center;
 }
 
-header .hero h1 {
-
+.header__menu {
+  display: none;
+}
+@media screen and (max-width: 730px) {
+  .header__menu {
+    float: right;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .header__menu svg {
+      width: 32px;
+      fill: #E0E0E0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .open {
+    display: inline-block;
+  }
 }
