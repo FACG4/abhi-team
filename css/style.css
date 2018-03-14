@@ -1,6 +1,77 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.services_h2 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row1 {
+  margin: 8px -16px;
+}
+
+.row1, .row1>.column {
+  padding: 8px;
+}
+
+.column_services {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #cce6ff;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 600
+}
+
+.services:hover {
+  background-color: red;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+img {
+  border-style: solid;
+  border-width: 1px;
+}
+
+/ Responsive layout - makes the three columns stack on top of each other instead of next to each other / media screen and (max-width: 900px) {
+  .column_services {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column_services {
+    width: 100%;
+  }
+}
+
 h3{
   margin-top:40px;
 }
