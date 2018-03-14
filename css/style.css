@@ -7,14 +7,35 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.team-padding{
+padding-left: 30px;
+padding-top: 15px;
+padding-right: 15px;
+padding-bottom: 15px;
+
+
+}
+
 .main {
   max-width: 1000px;
   margin: auto;
 }
 
-.services_h2 {
-  font-size: 50px;
-  word-break: break-all;
+h2 {
+  font-size: 30px;
+  /* word-break: break-all; */
+}
+
+.footer {
+left: 0;
+bottom: 0;
+width: 100%;
+height: 40px;
+background-color: black;
+color: white;
+text-align: center;
+padding-top:10px;
+font-size: 13px;
 }
 
 .row1 {
@@ -38,7 +59,7 @@ body {
 }
 
 .content {
-  background-color: #cce6ff;
+  /* background-color: #cce6ff; */
   padding: 10px;
   font-style: normal;
   font-weight: 600
@@ -165,10 +186,15 @@ media screen and (max-width: 900px) {
 .team p{
     margin-top:-40px;
 
+<<<<<<< HEAD
+
 }
-#backk {
-    background-color: #cce6ff;
+
+=======
 }
+
+>>>>>>> a15974d5c84f92624ad929aa0181f3ff5e1b7a6f
+
 #ptext {
   font-style: normal;
 font-weight: 600;
@@ -211,7 +237,10 @@ opacity: 0.5;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* .ContactUs__container form {
+background-color: white ;
 
+} */
 @media screen and (max-width: 800px) {
     .column {
         width: 50%;
@@ -277,6 +306,7 @@ padding: 5px;
 .ContactUs__container label{
   font-weight: bold;
   border-radius: 5px ;
+  padding-left: 15px;
 }
 
 .nav .nav-bar li:hover {
@@ -333,4 +363,5 @@ padding: 5px;
 .ContactUs__container fieldset{
   border-radius: 10px;
   padding: 20px;
+  background-color: white;
 }
