@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ABHI Team</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__container">
       <nav class="nav cf">
-        <img class="logo" src="imgs/logo.webp" alt="our team logo">
-        <a id="menu" class="header__menu">
+        <h1>A<span class="period">B</span>H<span class="period">I</span></h1>
+        <!-- <img class="logo" src="imgs/logo.webp" alt="our team logo"> -->
+        <a  href="#" id="menu" class="header__menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
           </svg>
         </a>
         <ul id="drawer" class="nav-bar cf">
-          <li><a href="">About</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#header">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#backk">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -86,64 +88,60 @@
   </div>
   <section>
       <h2 class="center"> Our Team </h2>
-      <div id="backk" class="main team team-padding"  >
-    <div class="row" class="team-padding">
-        <div id="wrapper" class="column"  >
+      <div  class="main team team-padding"  >
+    <div class="row">
+        <div  class="column wrapper"  >
           <img  class="hover" src="imgs\female.jpg" alt="Fjords" style="width:90%">
           <h3 class="text center">Haneen</h3>
-          <p class="center" id="ptext"> Hi I'm Haneen </p>
+          <p class="center ptext" > Hi I'm Haneen </p>
         </div>
-        <div id="wrapper" class="column">
+        <div  class="column wrapper">
           <img class="hover" src="imgs\male.jpg" alt="Forest" style="width:90%">
           <h3 class="text center">Abed Al-Samad</h3>
-          <p class="center" id="ptext">Hi I'm Abed Al-Samad</p>
+          <p class="center ptext" >Hi I'm Abed Al-Samad</p>
         </div>
-        <div id="wrapper" class="column">
+        <div  class="column wrapper">
           <img class="hover" src="imgs\female.jpg" alt="Mountains" style="width:90%">
           <h3 class="text center">Balsam</h3>
-          <p class="center" id="ptext">Hi I'm Balsam</p>
+          <p class="center ptext" >Hi I'm Balsam</p>
         </div>
-        <div id="wrapper" class="column">
+        <div  class="column wrapper">
           <img class="hover" src="imgs\male.jpg" alt="Mountains" style="width:90%">
           <h3 class="text center">Ishak</h3>
-          <p id="ptext" class="center">Hi I'm Ishak </p>
+          <p  class="center ptext">Hi I'm Ishak </p>
         </div>
       </div>
     </div>
   </section>
 
-      <div id="contact" class="ContactUs__container" >
-        <h2>Contact Us</h2>
-              <form >
+  <div id="contact" class="ContactUs__container" >
+    <h2>Contact Us</h2>
+          <form >
+        <fieldset>
+          <legend id = "legend">Personal Information :</legend><br>
+          <label for="firstname">First Name</label>
+          <input id ="firstname" type="text" name="firstname" placeholder="First Name" required><br><br>
 
-            <fieldset>
-              <legend id = "legend">Personal Information :</legend><br>
-              <label for="firstname">First Name</label>
-              <input id ="firstname" type="text" name="firstname" placeholder="First Name" required><br><br>
+          <label for="lastname">Last Name</label>
+          <input id ="lastname"type="text" name="lastname" placeholder="Last Name" required><br><br>
 
-              <label for="lastname">Last Name</label>
-              <input id ="lastname"type="text" name="lastname" placeholder="Last Name" required><br><br>
+          <label for="email">Your Email</label>
+            <input id ="email" type="email" name="email" placeholder="Email" required><br><br>
 
-              <label for="email">Your Email</label>
-                <input id ="email" type="email" name="email" placeholder="Email" required><br><br>
+            <label for="msg">Your Message</label>
+            <textarea id ="msg" placeholder="Message"></textarea>
+            <br><br>
 
-                <label for="msg">Your Message</label>
-                <textarea id ="msg" placeholder="Message"></textarea>
-                <br><br>
+            <button type="submit" class="submitbtn">Submit</button>
 
-                <button type="submit" class="submitbtn">Submit</button>
+        </fieldset>
+      </form>
 
-            </fieldset>
-          </form>
-
-  </div>
+</div>
 
   <footer class = "footer">This site is made by ABHI TEAM ^_^ !</footer>
 
   <script src="js/script.js" type="text/javascript"></script>
-  <div class="footer">
-  <p>This site is made by ABHI TEAM ^_^ !</p>
-</div>
 
 
 </body>
