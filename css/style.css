@@ -4,7 +4,7 @@
 
 body {
   background-color: #f1f1f1;
-  font-family: Arial;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .main {
@@ -89,9 +89,15 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
   background-size: cover;
   height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
 .nav {
   padding-top: 30px;
+  position: relative;
+}
+.nav h1 {
+  float: left;
+  color: white;
 }
 .nav .logo {
   width: 150px;
@@ -114,6 +120,20 @@ body {
   border-radius: 5px;
 }
 
+.header__container h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.header__container .period {
+  color: #4caf50;
+}
+.header__container p {
+  font-size: 26px;
+  width: 60%;
+  margin: 0 auto;
+}
+
 img:hover {
   opacity: 0.8;
 }
@@ -123,7 +143,8 @@ img {
   border-width: 1px;
 }
 
-/ Responsive layout - makes the three columns stack on top of each other instead of next to each other / media screen and (max-width: 900px) {
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+media screen and (max-width: 900px) {
   .column_services {
     width: 50%;
   }
@@ -135,6 +156,7 @@ img {
   .column_services {
     width: 100%;
   }
+
 }
 
 .team h3{
@@ -292,6 +314,19 @@ padding: 5px;
   }
   .open {
     display: inline-block;
+  }
+  .nav-bar {
+    position: absolute;
+    width: 400px;
+    top:60px;
+  }
+  .nav .nav-bar li {
+    display: block;
+    margin:0;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border-radius: 0;
+
   }
 }
 
