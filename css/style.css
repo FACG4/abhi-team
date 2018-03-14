@@ -6,6 +6,7 @@ body {
   background-color: #f1f1f1;
   font-family: Arial;
 }
+
 .team-padding{
 padding-left: 30px;
 padding-top: 15px;
@@ -20,9 +21,21 @@ padding-bottom: 15px;
   margin: auto;
 }
 
-.services_h2 {
-  font-size: 50px;
-  word-break: break-all;
+h2 {
+  font-size: 30px;
+  /* word-break: break-all; */
+}
+
+.footer {
+left: 0;
+bottom: 0;
+width: 100%;
+height: 40px;
+background-color: black;
+color: white;
+text-align: center;
+padding-top:10px;
+font-size: 13px;
 }
 
 .row1 {
@@ -271,6 +284,7 @@ padding: 5px;
 .ContactUs__container label{
   font-weight: bold;
   border-radius: 5px ;
+  padding-left: 15px;
 }
 
 .nav .nav-bar li:hover {
