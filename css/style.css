@@ -46,8 +46,7 @@ padding-bottom: 15px;
 }
 
 .content {
-  background-color: #cce6ff;
-  box-shadow: 3px 2px #e5e5e5;
+  /* background-color: #cce6ff; */
   padding: 10px;
   font-style: normal;
   font-weight: 600
@@ -154,11 +153,8 @@ img {
 
 
 }
-#backk {
-    background-color: #cce6ff;
-    box-shadow: 3px 2px #e5e5e5;
 
-}
+
 #ptext {
   font-style: normal;
 font-weight: 600;
@@ -201,7 +197,10 @@ opacity: 0.5;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* .ContactUs__container form {
+background-color: white ;
 
+} */
 @media screen and (max-width: 800px) {
     .column {
         width: 50%;
@@ -310,4 +309,5 @@ padding: 5px;
 .ContactUs__container fieldset{
   border-radius: 10px;
   padding: 20px;
+  background-color: white;
 }
