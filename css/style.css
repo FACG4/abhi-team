@@ -4,7 +4,6 @@
 
 body {
   background-color: #f1f1f1;
-  padding: 20px;
   font-family: Arial;
 }
 
@@ -49,6 +48,72 @@ body {
   background-color: red;
 }
 
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background: grey;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.nav {
+  padding-top: 30px;
+}
+.nav .logo {
+  width: 150px;
+  border-radius: 50%;
+  float: left;
+}
+
+.nav .nav-bar {
+  float: right;
+}
+
+.nav .nav-bar li {
+  display: inline-block;
+  padding: 10px 20px;
+  list-style: none;
+  background: #4caf50;
+  margin-left: 5px;
+  margin-top: 20px;
+  transition: color 2s, background 2s;
+  border-radius: 5px;
+}
+
 img:hover {
   opacity: 0.8;
 }
@@ -72,10 +137,10 @@ img {
   }
 }
 
-h3{
+.team h3{
   margin-top:40px;
 }
-p{
+.team p{
     margin-top:-40px;
 
 }
@@ -192,16 +257,42 @@ padding: 5px;
   border-radius: 5px ;
 }
 
-@media screen and (max-width: 300px) {
-  .submitbtn {
-    width: 100%;
-  }
+.nav .nav-bar li:hover {
+  color: green;
+  background: black;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.nav .nav-bar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .hero {
+  color: white;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.header__menu {
+  display: none;
+}
+@media screen and (max-width: 730px) {
+  .header__menu {
+    float: right;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  .header__menu svg {
+      width: 32px;
+      fill: #E0E0E0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .open {
+    display: inline-block;
+  }
 }
 
 .ContactUs__container fieldset{
