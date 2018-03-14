@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  text-align: center;
 }
 
 body {
@@ -71,4 +70,141 @@ img {
   .column_services {
     width: 100%;
   }
+}
+
+h3{
+  margin-top:40px;
+}
+p{
+    margin-top:-40px;
+
+}
+#backk {
+    background-color: #cce6ff;
+}
+#ptext {
+  font-style: normal;
+font-weight: 600;
+}
+
+#wrapper .text {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapper .text {
+visibility:visible;
+
+}
+.center{
+  text-align: center;
+}
+
+#wrapper .hover:hover {
+opacity: 0.5;
+}
+
+.hover{
+  border-radius: 50%;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* contact */
+
+.ContactUs__container input[type=text],.ContactUs__container input[type=email] ,.ContactUs__container textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.ContactUs__container input[type=text]:focus ,.ContactUs__container input[type=email]:focus ,.container textarea :focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.ContactUs__container h2 {
+  text-align: center;
+}
+
+.ContactUs__container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+font-weight: bold;
+border-radius: 10px;
+}
+
+.ContactUs__container {
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ContactUs__container button:hover {
+  opacity:1;
+}
+
+.ContactUs__container legend{
+font-weight: bold;
+font-size: 20px;
+padding: 5px;
+}
+
+.ContactUs__container label{
+  font-weight: bold;
+  border-radius: 5px ;
+}
+
+@media screen and (max-width: 300px) {
+  .submitbtn {
+    width: 100%;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ContactUs__container fieldset{
+  border-radius: 10px;
+  padding: 20px;
 }
