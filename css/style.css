@@ -257,6 +257,7 @@ padding: 5px;
 .ContactUs__container label{
   font-weight: bold;
   border-radius: 5px ;
+  padding-left: 15px;
 }
 
 .nav .nav-bar li:hover {
