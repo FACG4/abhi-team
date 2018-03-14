@@ -39,6 +39,7 @@ body {
 
 .content {
   background-color: #cce6ff;
+  box-shadow: 3px 2px #e5e5e5;
   padding: 10px;
   font-style: normal;
   font-weight: 600
@@ -146,6 +147,8 @@ img {
 }
 #backk {
     background-color: #cce6ff;
+    box-shadow: 3px 2px #e5e5e5;
+
 }
 #ptext {
   font-style: normal;
