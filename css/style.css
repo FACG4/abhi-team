@@ -3,7 +3,7 @@
   box-sizing: border-box; ;
 }
 
-.container input[type=text],.container input[type=email] ,.container textarea{
+.ContactUs__container input[type=text],.ContactUs__container input[type=email] ,.ContactUs__container textarea{
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -13,16 +13,16 @@
   border-radius: 10px;
 }
 
-.container input[type=text]:focus ,.container input[type=email]:focus ,.container textarea :focus{
+.ContactUs__container input[type=text]:focus ,.ContactUs__container input[type=email]:focus ,.container textarea :focus{
   background-color: #ddd;
   outline: none;
 }
 
-.container h2 {
+.ContactUs__container h2 {
   text-align: center;
 }
 
-.container button {
+.ContactUs__container button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -36,23 +36,23 @@ font-weight: bold;
 border-radius: 10px;
 }
 
-.container {
+.ContactUs__container {
   padding: 16px;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.container button:hover {
+.ContactUs__container button:hover {
   opacity:1;
 }
 
-.container legend{
+.ContactUs__container legend{
 font-weight: bold;
 font-size: 20px;
 padding: 5px;
 }
 
-.container label{
+.ContactUs__container label{
   padding-left: 15px;
   font-weight: bold;
   border-radius: 5px ;
@@ -70,7 +70,7 @@ padding: 5px;
   display: table;
 }
 
-.container fieldset{
+.ContactUs__container fieldset{
   border-radius: 10px;
   padding: 20px;
 }
