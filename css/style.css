@@ -3,7 +3,7 @@
   box-sizing: border-box; ;
 }
 
-.ContactUs__container input[type=text],.container input[type=email] ,.container textarea{
+.ContactUs__container input[type=text],.ContactUs__container input[type=email] ,.ContactUs__container textarea{
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -13,7 +13,7 @@
   border-radius: 10px;
 }
 
-.ContactUs__container input[type=text]:focus ,.container input[type=email]:focus ,.container textarea :focus{
+.ContactUs__container input[type=text]:focus ,.ContactUs__container input[type=email]:focus ,.container textarea :focus{
   background-color: #ddd;
   outline: none;
 }
