@@ -6,6 +6,14 @@ body {
   background-color: #f1f1f1;
   font-family: Arial;
 }
+.team-padding{
+padding-left: 30px;
+padding-top: 15px;
+padding-right: 15px;
+padding-bottom: 15px;
+
+
+}
 
 .main {
   max-width: 1000px;
@@ -143,6 +151,7 @@ img {
 }
 .team p{
     margin-top:-40px;
+
 
 }
 #backk {
