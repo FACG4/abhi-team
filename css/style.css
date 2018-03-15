@@ -157,7 +157,11 @@ font-size: 13px;
 
 img:hover {
   opacity: 0.8;
-  
+
+}
+
+.img-team{
+  width:90%;
 }
 
 img {
