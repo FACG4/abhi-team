@@ -3,9 +3,8 @@
 * Open the drawer when the menu ison is clicked.
 */
 
-let menu = document.querySelector('#menu');
-let main = document.querySelector('main');
-let drawer = document.querySelector('.nav-bar');
+const menu = document.querySelector('#menu');
+const drawer = document.querySelector('.nav-bar');
 
 menu.addEventListener('click', function(e) {
   drawer.classList.toggle('open');
