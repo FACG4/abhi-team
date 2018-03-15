@@ -145,11 +145,15 @@ body {
 
 img:hover {
   opacity: 0.8;
+  
 }
 
 img {
   border-style: solid;
   border-width: 1px;
+}
+.services{
+ width:90%
 }
 
 
