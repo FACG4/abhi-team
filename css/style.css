@@ -7,13 +7,8 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.team-padding{
-padding-left: 30px;
-padding-top: 15px;
-padding-right: 15px;
-padding-bottom: 15px;
-
-
+.team-padding {
+  padding: 15px 15px 15px 30px;
 }
 
 .main {
@@ -21,21 +16,20 @@ padding-bottom: 15px;
   margin: auto;
 }
 
-h2 {
+.header2 {
   font-size: 30px;
-  /* word-break: break-all; */
 }
 
 .footer {
-left: 0;
-bottom: 0;
-width: 100%;
-height: 40px;
-background-color: black;
-color: white;
-text-align: center;
-padding-top:10px;
-font-size: 13px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 13px;
 }
 
 .row1 {
@@ -59,7 +53,6 @@ font-size: 13px;
 }
 
 .content {
-  /* background-color: #cce6ff; */
   padding: 10px;
   font-style: normal;
   font-weight: 600
@@ -69,31 +62,22 @@ font-size: 13px;
   background-color: red;
 }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+
+.cf:before, .cf:after {
+  content: " ";
+
+  display: table;
+
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
+
+
 .cf {
-    *zoom: 1;
+  *zoom: 1;
 }
 
 * {
@@ -107,19 +91,22 @@ font-size: 13px;
 
 .header {
   background: grey;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
   background-size: cover;
   height: 100vh;
   font-family: 'Ubuntu', sans-serif;
 }
+
 .nav {
   padding-top: 30px;
   position: relative;
 }
+
 .nav h1 {
   float: left;
   color: white;
 }
+
 .nav .logo {
   width: 150px;
   border-radius: 50%;
@@ -149,6 +136,7 @@ font-size: 13px;
 .header__container .period {
   color: #4caf50;
 }
+
 .header__container p {
   font-size: 26px;
   width: 60%;
@@ -164,95 +152,84 @@ img {
   border-width: 1px;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 media screen and (max-width: 900px) {
   .column_services {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
   .column_services {
     width: 100%;
   }
-
 }
 
-.team h3{
-  margin-top:40px;
-}
-.team p{
-    margin-top:-40px;
-
-<<<<<<< HEAD
-
+.team h3 {
+  margin-top: 40px;
 }
 
-=======
-}
+.team p {
+  margin-top: -40px;
 
+}
 
 .ptext {
   font-style: normal;
-font-weight: 600;
+  font-weight: 600;
 }
 
 .wrapper .text {
-position:relative;
-bottom:30px;
-left:0px;
-
+  position: relative;
+  bottom: 30px;
+  left: 0px;
 }
 
 .wrapper .text {
-visibility:visible;
-
+  visibility: visible;
 }
-.center{
+
+.center {
   text-align: center;
 }
 
 .wrapper .hover:hover {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
-.hover{
+.hover {
   border-radius: 50%;
 }
 
 .column {
-    float: left;
-    width: 25%;
-    padding: 5px;
+  float: left;
+  width: 25%;
+  padding: 5px;
 }
 
-/* Clearfix (clear floats) */
+
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-/* .ContactUs__container form {
-background-color: white ;
-} */
+
 @media screen and (max-width: 800px) {
-    .column {
-        width: 50%;
-    }
+  .column {
+    width: 50%;
+  }
 }
+
 @media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
+  .column {
+    width: 100%;
+  }
 }
 
-/* contact */
 
-.ContactUs__container input[type=text],.ContactUs__container input[type=email] ,.ContactUs__container textarea{
+.ContactUs__container input[type=text], .ContactUs__container input[type=email], .ContactUs__container textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -263,7 +240,7 @@ background-color: white ;
   box-shadow: 0px 1px 4px 0px #999999e0;
 }
 
-.ContactUs__container input[type=text]:focus ,.ContactUs__container input[type=email]:focus ,.container textarea :focus{
+.ContactUs__container input[type=text]:focus, .ContactUs__container input[type=email]:focus, .container textarea :focus {
   background-color: #ddd;
   outline: none;
 }
@@ -280,11 +257,10 @@ background-color: white ;
   border: none;
   cursor: pointer;
   width: 100%;
-  /* opacity: 0.9; */
   font-size: 16px;
-font-weight: bold;
-border-radius: 4px;
-box-shadow: 0px 1px 4px 0px #999999e0;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px 0px #999999e0;
 }
 
 .ContactUs__container {
@@ -294,26 +270,25 @@ box-shadow: 0px 1px 4px 0px #999999e0;
 }
 
 .ContactUs__container button:hover {
-  opacity:1;
+  opacity: 1;
 }
 
-.ContactUs__container legend{
-font-weight: bold;
-font-size: 20px;
-padding: 5px;
-}
-
-.ContactUs__container label{
+.ContactUs__container legend {
   font-weight: bold;
-  border-radius: 5px ;
-  padding-left:  5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.ContactUs__container label {
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 5px;
 }
 
 .nav .nav-bar li:hover {
   color: green;
   background: black;
 }
-
 
 .nav .nav-bar li a {
   text-decoration: none;
@@ -329,6 +304,7 @@ padding: 5px;
 .header__menu {
   display: none;
 }
+
 @media screen and (max-width: 730px) {
   .header__menu {
     float: right;
@@ -336,8 +312,8 @@ padding: 5px;
     display: inline-block;
   }
   .header__menu svg {
-      width: 32px;
-      fill: #E0E0E0;
+    width: 32px;
+    fill: #E0E0E0;
   }
   .nav-bar {
     display: none;
@@ -348,19 +324,18 @@ padding: 5px;
   .nav-bar {
     position: absolute;
     width: 400px;
-    top:60px;
+    top: 60px;
   }
   .nav .nav-bar li {
     display: block;
-    margin:0;
+    margin: 0;
     margin-top: 5px;
     padding: 10px 20px;
     border-radius: 0;
-
   }
 }
 
-.ContactUs__container fieldset{
+.ContactUs__container fieldset {
   border-radius: 10px;
   padding: 20px;
   background-color: white;
